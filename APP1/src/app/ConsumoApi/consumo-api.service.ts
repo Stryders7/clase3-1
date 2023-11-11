@@ -14,7 +14,7 @@ export class ConsumoApiService {
   ) { }
 
   getCharacter():Observable<any>{
-    return this.http.get('${this.base_url}/character');
+    return this.http.get<any>(`${this.base_url}/character`);
 
   }
 }
